@@ -1,0 +1,37 @@
+{
+  "name": "trust-fix",
+  "version": "1.0.0",
+  "description": "A cryptocurrency and assets website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chisom-Joseph/trust-fix.git"
+  },
+  "keywords": [
+    "cryptocurrency",
+    "assets",
+    "money",
+    "wallet-connect",
+    "connect-wallet",
+    "connect",
+    "wallet"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chisom-Joseph/trust-fix/issues"
+  },
+  "homepage": "https://github.com/Chisom-Joseph/trust-fix#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}
