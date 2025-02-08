@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,800&amp;family=Staatliches&amp;display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+}
+
+hr {
+  width: 70%;
+  position: relative;
+  left: 15%;
+}
+
+.navbar {
+  color: white;
+  height: 80px;
+  border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.navbar-light .navbar-toggler {
+  color: transparent;
+  border: none;
+}
+
+.nav-link {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #0000FF;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #0000FF;
+}
+
+.i-btn {
+  width: 200px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  margin-top: -10px;
+  padding-top: 100px;
+}
+
+.intro-content {
+  height: 500px;
+}
+
+.intro-text h2 {
+  margin-top: 50px;
+  color: black;
+  font-size: 40px;
+}
+
+.intro-text i {
+  color: #fafafa;
+}
+
+.intro-btn {
+  width: 300px;
+  height: auto;
+}
+
+.intro-btn img {
+  height: 50px;
+  margin: 10px 0;
+}
+
+.intro-img img {
+  height: 90%;
+  width: 90%;
+}
+
+.i-img {
+  padding-bottom: 150px;
+}
+
+.i-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#attribute .a-content {
+  height: 100px;
+  padding-top: 30px;
+}
+
+#attribute .a-content .a-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#attribute .a-content .a-card i {
+  font-size: 20px;
+  margin-top: -7px;
+  margin-right: 10px;
+  color: #0000FF;
+}
+
+#attribute .a-content .a-card h5 {
+  font-weight: 600;
+}
+
+.cryptos {
+  margin-top: 100px;
+}
+
+.cryptos img {
+  height: 180px;
+  margin: 50px;
+}
+
+.r-section {
+  height: 300px;
+  background-color: #24292e;
+  margin-top: 100px;
+}
+
+.r-section h5 {
+  color: white;
+}
+
+#reason .r-content {
+  height: auto;
+  text-align: center;
+}
+
+#reason .r-content .lists {
+  height: auto;
+  padding-bottom: 20px;
+}
+
+#reason .r-content .lists .lists-card {
+  height: auto;
+  margin-top: 30px;
+}
+
+#reason .r-content .lists .lists-card ul li {
+  margin: 10px;
+}
+
+#reason .r-content .lists .lists-card ul li i {
+  color: rgb(32, 32, 32);
+  margin-right: 7px;
+}
+
+#reason .r-content a {
+  margin: 30px;
+  padding: 10px;
+  background: #0000FF;
+  color: white;
+}
+
+.main {
+  margin-top: 150px;
+}
+
+.main-content {
+  margin-top: 50px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 3px rgb(238, 237, 237);
+}
+
+footer {
+  height: auto;
+  margin-top: 50px;
+  border-top: 2px solid rgb(235, 234, 234);
+}
+
+footer h5 {
+  color: #f6851b;
+  font-size: 18px;
+}
+
+footer img {
+  height: 100px;
+}
+
+footer .f-content {
+  height: auto;
+}
+
+footer .f-content ul li {
+  margin-bottom: 20px;
+}
+
+footer .f-content a {
+  color: rgba(0, 0, 0, 0.74);
+  font-size: 12px;
+}
+
+footer .f-content i {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.wallet {
+  text-align: center;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.wallet img {
+  height: 45px;
+  margin: 10px 0;
+}
+
+.wallet h2 {
+  margin-top: 30px;
+  color: rgb(67, 68, 71);
+  font-weight: 500;
+}
+.wallet .r-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px rgb(240, 239, 239);
+  display: none;
+}
+
+#btn1 {
+  width: 180px;
+  height: 40px;
+  font-weight: bold;
+  background-color: transparent;
+  color: #0000FF;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid #0000FF;
+  margin: 40px auto;
+  cursor: pointer;
+}
+
+#btn2 {
+  width: 180px;
+  height: 40px;
+  font-weight: bold;
+  background-color: transparent;
+  color: #0000FF;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid #0000FF;
+  margin: 40px auto;
+  cursor: pointer;
+}
+
+#btn1:focus,
+#btn2:focus {
+  background-color: #0000FF;
+  color: white;
+}
+
+.r-container {
+  width: 60%;
+  margin: 20px auto;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+form input[type="text"] {
+  margin: 20px 0;
+  height: 30px;
+  width: 180px;
+  background-color: #0000FF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+form input::placeholder {
+  
+}
+
+form .password {
+  width: 300px;
+  height: 30px;
+  color: rgb(32, 31, 31);
+  text-align: center;
+  outline: none;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.input input {
+  text-align: center;
+}
+
+.input span {
+  margin: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    padding-right: 10px;
+  }
+  .navbar-brand img {
+    height: 40px;
+    margin-left: 5px;
+  }
+
+  .navbar-nav {
+    background-color: white;
+    color: black;
+  }
+
+  .navbar-nav .nav-link {
+    color: black;
+  }
+
+  .intro {
+    height: 1000px;
+    padding-bottom: 10px;
+  }
+
+  .i {
+    height: 850px;
+  }
+
+  .intro-text {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .i-btn {
+    margin: 10px auto;
+  }
+
+  .intro-btn {
+    margin: 5px auto;
+  }
+
+  #attribute .a-content {
+    height: auto;
+  }
+  #attribute .a-content .a-card {
+    margin-top: 20px;
+  }
+  #attribute .a-content .a-card i {
+    font-size: 17px;
+  }
+
+  #attribute .a-content .a-card h5 {
+    font-size: 17px;
+  }
+
+  .cryptos img {
+    height: 170px;
+  }
+
+  .cryptos h4 {
+    font-size: 20px;
+  }
+
+  .main h4 {
+    font-size: 20px;
+  }
+
+  .r-container {
+    width: 85%;
+  }
+
+  .wallet h1 {
+    font-size: 25px;
+  }
+
+  .input span {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .cryptos img {
+    height: 150px;
+    margin: 20px 5px;
+  }
+}
+
+#boldtxt{
+  font-weight: 800;
+  margin-bottom: 10px;
+}
