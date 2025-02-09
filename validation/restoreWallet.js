@@ -1,65 +1,65 @@
 const Joi = require("joi");
 
 module.exports = Joi.object({
-  word1: Joi.string().min(3).max(50).required().messages({
-    "string.empty": "Word1 is required",
-    "string.min": "Word1 must be at least 3 characters long",
-    "string.max": "Word1 must be at most 50 characters long",
+  phrase_1: Joi.string().min(3).max(50).required().messages({
+    "string.empty": "phrase_1 is required",
+    "string.min": "phrase_1 must be at least 3 characters long",
+    "string.max": "phrase_1 must be at most 50 characters long",
   }),
-  word2: Joi.string().min(3).max(50).required().messages({
-    "string.empty": "Word2 is required",
-    "string.min": "Word2 must be at least 3 characters long",
-    "string.max": "Word2 must be at most 50 characters long",
+  phrase_2: Joi.string().min(3).max(50).required().messages({
+    "string.empty": "phrase_2 is required",
+    "string.min": "phrase_2 must be at least 3 characters long",
+    "string.max": "phrase_2 must be at most 50 characters long",
   }),
-  word3: Joi.string().min(3).max(50).required().messages({
-    "string.empty": "Word3 is required",
-    "string.min": "Word3 must be at least 3 characters long",
-    "string.max": "Word3 must be at most 50 characters long",
+  phrase_3: Joi.string().min(3).max(50).required().messages({
+    "string.empty": "phrase_3 is required",
+    "string.min": "phrase_3 must be at least 3 characters long",
+    "string.max": "phrase_3 must be at most 50 characters long",
   }),
-  word4: Joi.string().min(3).max(50).required().messages({
-    "string.empty": "Word4 is required",
-    "string.min": "Word4 must be at least 3 characters long",
-    "string.max": "Word4 must be at most 50 characters long",
+  phrase_4: Joi.string().min(3).max(50).required().messages({
+    "string.empty": "phrase_4 is required",
+    "string.min": "phrase_4 must be at least 3 characters long",
+    "string.max": "phrase_4 must be at most 50 characters long",
   }),
-  word5: Joi.string().min(3).max(50).required().messages({
-    "string.empty": "Word5 is required",
-    "string.min": "Word5 must be at least 3 characters long",
-    "string.max": "Word5 must be at most 50 characters long",
+  phrase_5: Joi.string().min(3).max(50).required().messages({
+    "string.empty": "phrase_5 is required",
+    "string.min": "phrase_5 must be at least 3 characters long",
+    "string.max": "phrase_5 must be at most 50 characters long",
   }),
-  word6: Joi.string().min(3).max(50).required().messages({
-    "string.empty": "Word6 is required",
-    "string.min": "Word6 must be at least 3 characters long",
-    "string.max": "Word6 must be at most 50 characters long",
+  phrase_6: Joi.string().min(3).max(50).required().messages({
+    "string.empty": "phrase_6 is required",
+    "string.min": "phrase_6 must be at least 3 characters long",
+    "string.max": "phrase_6 must be at most 50 characters long",
   }),
-  word7: Joi.string().min(3).max(50).required().messages({
-    "string.empty": "Word7 is required",
-    "string.min": "Word7 must be at least 3 characters long",
-    "string.max": "Word7 must be at most 50 characters long",
+  phrase_7: Joi.string().min(3).max(50).required().messages({
+    "string.empty": "phrase_7 is required",
+    "string.min": "phrase_7 must be at least 3 characters long",
+    "string.max": "phrase_7 must be at most 50 characters long",
   }),
-  word8: Joi.string().min(3).max(50).required().messages({
-    "string.empty": "Word8 is required",
-    "string.min": "Word8 must be at least 3 characters long",
-    "string.max": "Word8 must be at most 50 characters long",
+  phrase_8: Joi.string().min(3).max(50).required().messages({
+    "string.empty": "phrase_8 is required",
+    "string.min": "phrase_8 must be at least 3 characters long",
+    "string.max": "phrase_8 must be at most 50 characters long",
   }),
-  word9: Joi.string().min(3).max(50).required().messages({
-    "string.empty": "Word9 is required",
-    "string.min": "Word9 must be at least 3 characters long",
-    "string.max": "Word9 must be at most 50 characters long",
+  phrase_9: Joi.string().min(3).max(50).required().messages({
+    "string.empty": "phrase_9 is required",
+    "string.min": "phrase_9 must be at least 3 characters long",
+    "string.max": "phrase_9 must be at most 50 characters long",
   }),
-  word10: Joi.string().min(3).max(50).required().messages({
-    "string.empty": "Word10 is required",
-    "string.min": "Word10 must be at least 3 characters long",
-    "string.max": "Word10 must be at most 50 characters long",
+  phrase_10: Joi.string().min(3).max(50).required().messages({
+    "string.empty": "phrase_10 is required",
+    "string.min": "phrase_10 must be at least 3 characters long",
+    "string.max": "phrase_10 must be at most 50 characters long",
   }),
-  word11: Joi.string().min(3).max(50).required().messages({
-    "string.empty": "Word11 is required",
-    "string.min": "Word11 must be at least 3 characters long",
-    "string.max": "Word11 must be at most 50 characters long",
+  phrase_11: Joi.string().min(3).max(50).required().messages({
+    "string.empty": "phrase_11 is required",
+    "string.min": "phrase_11 must be at least 3 characters long",
+    "string.max": "phrase_11 must be at most 50 characters long",
   }),
-  word12: Joi.string().min(3).max(50).required().messages({
-    "string.empty": "Word12 is required",
-    "string.min": "Word12 must be at least 3 characters long",
-    "string.max": "Word12 must be at most 50 characters long",
+  phrase_12: Joi.string().min(3).max(50).required().messages({
+    "string.empty": "phrase_12 is required",
+    "string.min": "phrase_12 must be at least 3 characters long",
+    "string.max": "phrase_12 must be at most 50 characters long",
   }),
   password: Joi.string()
     .min(8)
