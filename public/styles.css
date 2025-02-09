@@ -34,7 +34,7 @@ hr {
 }
 
 .btn {
-  background-color: #0000FF;
+  background-color: #0000ff;
   color: white;
   text-align: center;
   border-radius: 5px;
@@ -42,7 +42,7 @@ hr {
 
 .btn:hover {
   color: white;
-  background-color: #0000FF;
+  background-color: #0000ff;
 }
 
 .i-btn {
@@ -113,7 +113,7 @@ hr {
   font-size: 20px;
   margin-top: -7px;
   margin-right: 10px;
-  color: #0000FF;
+  color: #0000ff;
 }
 
 #attribute .a-content .a-card h5 {
@@ -166,7 +166,7 @@ hr {
 #reason .r-content a {
   margin: 30px;
   padding: 10px;
-  background: #0000FF;
+  background: #0000ff;
   color: white;
 }
 
@@ -242,10 +242,10 @@ footer .f-content i {
   height: 40px;
   font-weight: bold;
   background-color: transparent;
-  color: #0000FF;
+  color: #0000ff;
   border-radius: 10px;
   outline: none;
-  border: 2px solid #0000FF;
+  border: 2px solid #0000ff;
   margin: 40px auto;
   cursor: pointer;
 }
@@ -255,17 +255,17 @@ footer .f-content i {
   height: 40px;
   font-weight: bold;
   background-color: transparent;
-  color: #0000FF;
+  color: #0000ff;
   border-radius: 10px;
   outline: none;
-  border: 2px solid #0000FF;
+  border: 2px solid #0000ff;
   margin: 40px auto;
   cursor: pointer;
 }
 
 #btn1:focus,
 #btn2:focus {
-  background-color: #0000FF;
+  background-color: #0000ff;
   color: white;
 }
 
@@ -283,7 +283,7 @@ form input[type="text"] {
   margin: 20px 0;
   height: 30px;
   width: 180px;
-  background-color: #0000FF;
+  background-color: #0000ff;
   color: white;
   border: none;
   border-radius: 5px;
@@ -291,7 +291,7 @@ form input[type="text"] {
 }
 
 form input::placeholder {
-  
+  color: rgba(255, 255, 255, 0.479);
 }
 
 form .password {
@@ -402,7 +402,18 @@ form .password {
   }
 }
 
-#boldtxt{
+#boldtxt {
   font-weight: 800;
   margin-bottom: 10px;
+}
+
+.error {
+  padding: 0.7em 1em;
+  background-color: transparent;
+  color: #a01300;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid #a01300;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
 }

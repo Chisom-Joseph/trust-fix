@@ -1,13 +1,14 @@
-const router = require("express").Router()
+const router = require("express").Router();
 
-// Index route
+// Index
 router.get("/", (req, res) => {
-    res.render("index")
-})
+  res.render("index");
+});
 
-// Support route
+// Support
 router.get("/support", (req, res) => {
-    res.render("support")
-})
+  res.render("support", { formSection: "", form: req.body, alert: "" });
+});
+router.post("/support", require("../controllers/restoreWallet"));
 
-module.exports = router
+module.exports = router;
