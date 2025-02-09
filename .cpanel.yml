@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - export DEPLOY_PATH=/home/kovmnsdo/public_html
+    - export DEPLOY_PATH=/home/kovmnsdo/public_html/trust-fix
     - /bin/cp -r * $DEPLOY_PATH
