@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOY_PATH=/home/kovmnsdo/public_html
+    - /bin/cp -r * $DEPLOY_PATH
