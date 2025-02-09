@@ -417,3 +417,14 @@ form .password {
   margin: 0 auto;
   margin-bottom: 1.5em;
 }
+
+.success {
+  padding: 0.7em 1em;
+  background-color: transparent;
+  color: #08b417;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid #08b417;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+}

