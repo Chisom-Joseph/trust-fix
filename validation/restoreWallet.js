@@ -61,22 +61,6 @@ const phrase12 = Joi.object({
     "string.min": "phrase_12 must be at least 3 characters long",
     "string.max": "phrase_12 must be at most 50 characters long",
   }),
-  password: Joi.string()
-    .min(8)
-    .max(30)
-    .pattern(
-      new RegExp(
-        "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$"
-      )
-    )
-    .required()
-    .messages({
-      "string.empty": "Password is required",
-      "string.min": "Password must be at least 8 characters long",
-      "string.max": "Password must be at most 30 characters long",
-      "string.pattern.base":
-        "Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character",
-    }),
   checkbox: Joi.string().valid("on").required().messages({
     "any.only": "Checkbox must be checked",
     "string.empty": "Checkbox selection is required",
@@ -204,22 +188,6 @@ const phrase24 = Joi.object({
     "string.min": "phrase_24 must be at least 3 characters long",
     "string.max": "phrase_24 must be at most 50 characters long",
   }),
-  password: Joi.string()
-    .min(8)
-    .max(30)
-    .pattern(
-      new RegExp(
-        "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$"
-      )
-    )
-    .required()
-    .messages({
-      "string.empty": "Password is required",
-      "string.min": "Password must be at least 8 characters long",
-      "string.max": "Password must be at most 30 characters long",
-      "string.pattern.base":
-        "Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character",
-    }),
   checkbox: Joi.string().valid("on").required().messages({
     "any.only": "Checkbox must be checked",
     "string.empty": "Checkbox selection is required",

